@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="badge_text_size">12sp</dimen>
+    <dimen name="fixed_label_active">13sp</dimen>
+    <dimen name="fixed_label_inactive">12sp</dimen>
+
+    <!--slider_layout-->
+    <dimen name="si_default_text_size">18sp</dimen>
+    <dimen name="si_default_radius_max">24dp</dimen>
+    <dimen name="si_default_radius_min">8dp</dimen>
+    <!--slider_layout-->
+
+
+
+</resources>

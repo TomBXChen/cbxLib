@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="THD.Dialog" parent="android:Theme.Dialog">
+        <!--<style name="THD.Dialog" parent="Theme.AppCompat.Light.Dialog">-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:minWidth">?attr/thd_dialog_min_width</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:layout_marginLeft">?attr/thd_dialog_margin_horizontal</item>
+        <item name="android:layout_marginRight">?attr/thd_dialog_margin_horizontal</item>
+        <!-- Minor指竖屏模式下的宽度 -->
+        <!--<item name="android:windowMinWidthMinor">?attr/thd_dialog_min_width</item>-->
+        <!--<item name="windowFixedWidthMinor">?attr/thd_dialog_min_width</item>-->
+    </style>
+
+    <style name="THD.TipDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="THD.TopBar">
+        <item name="thd_topbar_separator_color">?attr/thd_config_color_separator</item>
+        <item name="thd_topbar_separator_height">1px</item>
+        <item name="thd_topbar_bg_color">@color/thd_config_color_white</item>
+        <item name="thd_topbar_need_separator">true</item>
+        <item name="thd_topbar_left_back_drawable_id">@drawable/thd_icon_topbar_back</item>
+        <item name="thd_topbar_title_gravity">center</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+
+
+    <style name="THD.RoundButton" parent="android:Widget.Holo.Light.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:padding">0dp</item>--><!-- 不用 android:padding，而用各个方向分别指定 padding，方便子类覆盖 -->
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="thd_isRadiusAdjustBounds">true</item>
+        <item name="thd_backgroundColor">@color/thd_s_transparent</item>
+        <item name="thd_borderWidth">?attr/thd_round_btn_border_width</item>
+        <item name="thd_borderColor">?attr/thd_round_btn_border_color</item>
+        <item name="android:textColor">?attr/thd_round_btn_text_color</item>
+    </style>
+
+    <style name="ButtonBase.Compat" parent="@style/Widget.AppCompat.Button">
+        <!-- 取消 Button 字符默认大写的功能（会导致 Spannable 失效），默认值只影响 5.0 以上版本，但使用Compat包后，4.x 版本也会受到影响 -->
+        <!-- http://stackoverflow.com/questions/29007746/button-settext-with-spannable-dosent-work-for-android-5-0-lollipop -->
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearanceBase" parent="android:TextAppearance.Holo" />
+
+    <style name="THDTextAppearance" parent="TextAppearanceBase">
+        <item name="android:textColor">?attr/qmui_config_color_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHighlight">?attr/thd_config_color_background_pressed</item>
+    </style>
+
+    <style name="THDTextAppearance.GridItem" />
+
+    <style name="THDTextAppearance.GridItem.Small">
+        <item name="android:textColor">@color/thd_config_color_gray_3</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="THDTextAppearance.Title" />
+
+    <style name="THDTextAppearance.Title.Gray">
+        <item name="android:textColor">?attr/thd_config_color_gray_3</item>
+    </style>
+
+    <style name="THDTextAppearance.ListItem">
+        <item name="android:textColor">@color/thd_s_list_item_text_color</item>
+    </style>
+
+    <style name="THD.TipPoint">
+        <item name="android:layout_width">@dimen/thd_tips_point_size</item>
+        <item name="android:layout_height">@dimen/thd_tips_point_size</item>
+        <item name="android:background">@drawable/thd_tips_point</item>
+    </style>
+
+    <!-- 提示更新new -->
+    <style name="THD.TipNew">
+        <item name="android:layout_width">37dp</item>
+        <item name="android:layout_height">17dp</item>
+        <item name="android:background">@drawable/thd_icon_tip_new</item>
+    </style>
+
+    <style name="THD.BottomSheet" parent="android:Theme.Dialog">
+        <item name="android:backgroundDimAmount">?attr/thd_dialog_background_dim_amount</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null
+        </item><!-- 为了避免在有 NavigationBar 的手机上 Dialog 从 NavigationBar 底部上来。去掉 Dialog 的动画，使用 View 的动画。-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <declare-styleable name="THDTextAppearance">
+        <attr name="android:textSize" />。
+        <attr name="android:textColor" />
+        <attr name="android:textColorHint" />
+        <attr name="android:textStyle" />
+        <attr name="android:typeface" />
+        <attr name="textAllCaps" />
+        <attr name="android:shadowColor" />
+        <attr name="android:shadowDy" />
+        <attr name="android:shadowDx" />
+        <attr name="android:shadowRadius" />
+    </declare-styleable>
+
+    <style name="THD.CollapsingTopBarLayoutCollapsed">
+        <item name="android:textColor">?attr/thd_topbar_title_color</item>
+        <item name="android:textSize">?attr/thd_topbar_title_text_size</item>
+    </style>
+
+    <style name="THD.CollapsingTopBarLayoutExpanded">
+        <item name="android:textColor">?attr/thd_topbar_title_color</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="THD.GroupListSectionView">
+        <item name="android:paddingLeft">?attr/thd_content_padding_horizontal</item>
+        <item name="android:paddingRight">?attr/thd_content_padding_horizontal</item>
+        <item name="android:paddingTop">
+            ?attr/thd_group_list_section_header_footer_padding_vertical
+        </item>
+        <item name="android:paddingBottom">
+            ?attr/thd_group_list_section_header_footer_padding_vertical
+        </item>
+    </style>
+
+    <style name="THD.CommonListItemView">
+        <item name="android:paddingLeft">?attr/thd_content_padding_horizontal</item>
+        <item name="android:paddingRight">?attr/thd_content_padding_horizontal</item>
+        <item name="android:background">@drawable/thd_s_list_item_bg_with_border_none</item>
+        <item name="thd_commonList_titleColor">?attr/thd_config_color_gray_1</item>
+        <item name="thd_commonList_detailColor">?attr/thd_config_color_gray_5</item>
+    </style>
+
+    <declare-styleable name="THDCollapsingTopBarLayout_Layout">
+        <attr name="thd_layout_collapseMode">
+            <enum name="none" value="0" />
+            <enum name="pin" value="1" />
+            <enum name="parallax" value="2" />
+        </attr>
+        <attr name="thd_layout_collapseParallaxMultiplier" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="THDCollapsingTopBarLayout">
+        <attr name="thd_expandedTitleMargin" format="dimension" />
+        <attr name="thd_expandedTitleMarginStart" format="dimension" />
+        <attr name="thd_expandedTitleMarginTop" format="dimension" />
+        <attr name="thd_expandedTitleMarginEnd" format="dimension" />
+        <attr name="thd_expandedTitleMarginBottom" format="dimension" />
+        <attr name="thd_expandedTitleTextAppearance" format="reference" />
+        <attr name="thd_collapsedTitleTextAppearance" format="reference" />
+        <attr name="thd_contentScrim" format="color" />
+        <attr name="thd_statusBarScrim" format="color" />
+        <attr name="thd_topBarId" format="reference" />
+        <attr name="thd_scrimVisibleHeightTrigger" format="dimension" />
+        <attr name="thd_scrimAnimationDuration" format="integer" />
+        <attr name="thd_collapsedTitleGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="center" value="0x11" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+        <attr name="thd_expandedTitleGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="center" value="0x11" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+        <attr name="thd_titleEnabled" format="boolean" />
+        <attr name="thd_title" />
+    </declare-styleable>
+
+    <style name="qmui_dialog_wrap">
+        <item name="android:background">?attr/thd_dialog_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">?attr/thd_dialog_margin_vertical</item>
+        <item name="android:layout_marginBottom">?attr/thd_dialog_margin_vertical</item>
+    </style>
+
+    <style name="thd_tip_dialog_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">?attr/thd_tip_dialog_min_width</item>
+        <item name="android:minHeight">?attr/thd_tip_dialog_min_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">?attr/thd_content_spacing_horizontal</item>
+        <item name="android:layout_marginRight">?attr/thd_content_spacing_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">?attr/thd_tip_dialog_padding_horizontal</item>
+        <item name="android:paddingRight">?attr/thd_tip_dialog_padding_horizontal</item>
+        <item name="android:paddingTop">?attr/thd_tip_dialog_padding_vertical</item>
+        <item name="android:paddingBottom">?attr/thd_tip_dialog_padding_vertical</item>
+        <item name="android:background">?attr/thd_tip_dialog_bg</item>
+    </style>
+
+    <declare-styleable name="THDLoadingView">
+        <attr name="thd_loading_view_size" format="dimension" />
+        <attr name="android:color" />
+    </declare-styleable>
+
+    <style name="THDLoadingStyle">
+        <item name="thd_loading_view_size">20dp</item>
+        <item name="android:color">#858C96</item>
+    </style>
+
+    <style name="thd_tab_sign_count_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">?attr/thd_tab_sign_count_view_minSize</item>
+        <item name="android:background">?attr/thd_tab_sign_count_view_bg</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/thd_config_color_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">?attr/thd_tab_sign_count_view_padding_horizontal</item>
+        <item name="android:paddingRight">?attr/thd_tab_sign_count_view_padding_horizontal</item>
+        <item name="android:minWidth">?attr/thd_tab_sign_count_view_minSize</item>
+        <item name="android:minHeight">?attr/thd_tab_sign_count_view_minSize</item>
+    </style>
+
+    <style name="THD.TabSegment">
+        <item name="thd_tab_has_indicator">false</item>
+        <item name="thd_tab_indicator_height">@dimen/thd_tab_segment_indicator_height</item>
+        <item name="android:textSize">@dimen/thd_tab_segment_text_size</item>
+        <item name="thd_tab_indicator_top">false</item>
+        <item name="thd_tab_icon_position">left</item>
+    </style>
+
+    <style name="THD.RadiusImageView">
+        <item name="thd_is_circle">true</item>
+        <item name="thd_border_width">1px</item>
+        <item name="thd_border_color">@color/thd_config_color_white</item>
+        <item name="thd_is_touch_select_mode_enabled">true</item>
+    </style>
+
+    <style name="Animation_top_left">
+        <item name="android:windowEnterAnimation">@anim/open_top_left</item>
+        <item name="android:windowExitAnimation">@anim/close_top_left</item>
+    </style>
+
+    <style name="Animation_bottom_left">
+        <item name="android:windowEnterAnimation">@anim/open_bottom_left</item>
+        <item name="android:windowExitAnimation">@anim/close_bottom_left</item>
+    </style>
+
+    <style name="Animation_bottom_right">
+        <item name="android:windowEnterAnimation">@anim/open_bottom_right</item>
+        <item name="android:windowExitAnimation">@anim/close_bottom_right</item>
+    </style>
+
+    <style name="Animation_top_right">
+        <item name="android:windowEnterAnimation">@anim/open_top_right</item>
+        <item name="android:windowExitAnimation">@anim/close_top_right</item>
+    </style>
+
+    <style name="comment_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!-- 显示对话框时当前的屏幕是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="versionCheckLibvtransparentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="THD.Animation" parent="@android:style/Animation" />
+
+    <style name="THD.Animation.PopUpMenu" />
+
+    <style name="THD.Animation.PopUpMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="THD.Animation.PopUpMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="THD.Animation.PopUpMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="THD.Animation.PopDownMenu" />
+
+    <style name="THD.Animation.PopDownMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="THD.Animation.PopDownMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="THD.Animation.PopDownMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+
+    <style name="BadgeText" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">@dimen/badge_text_size</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginTop">@dimen/badge_top_margin</item>
+
+        <item name="android:visibility">gone</item>
+    </style>
+    <!--主题样式-->
+    <style name="dialog_pay_theme" parent="@android:style/Theme.Dialog">
+        <!--边框-->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.4</item><!--弹框背景灰度-->
+    </style>
+
+    <!--动画方式-->
+    <style name="dialogOpenAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_payview_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_payview_out</item>
+    </style>
+    <!--<item name="android:paddingRight">@dimen/badge_width_padding</item>-->
+    <!--<item name="android:paddingLeft">@dimen/badge_width_padding</item>-->
+    <!--<item name="android:paddingBottom">@dimen/badge_height_padding</item>-->
+    <!--<item name="android:paddingTop">@dimen/badge_height_padding</item>-->
+</resources>

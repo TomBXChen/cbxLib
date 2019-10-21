@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+    api rootProject.ext.dependencies["zxing-core"]
+    api rootProject.ext.dependencies["support-v4"]
+}
+
+android {
+    resourcePrefix 'zxing_'
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res-orig', 'res']
+            assets.srcDirs = ['assets']
+        }
+        test.setRoot('test');
+    }
+
+    // This is bad practice - we should fix the warnings instead.
+    lintOptions {
+        // Android warns about the he and id locale folders. he -> iw is already handled with a
+        // symlink. TODO: what about id?
+        disable 'LocaleFolder'
+    }
+
+    testOptions {
+        // We test with primitives such as Rect, and rely on their default behaviour working.
+        unitTests.returnDefaultValues = true
+    }
+}
+
+
+

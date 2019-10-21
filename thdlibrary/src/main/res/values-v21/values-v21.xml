@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBarBase" parent="android:Widget.Material.Light.ActionBar"/>
+    <style name="ActionBarTitleTextBase" parent="android:TextAppearance.Material.Widget.ActionBar.Title"/>
+    <style name="AppRootTheme" parent="android:Theme.Material.Light"/>
+    <style name="AutoCompleteTextView" parent="AutoCompleteTextViewBase">
+        <item name="android:textColor">?attr/thd_config_color_gray_1</item>
+        <item name="android:textColorHint">?attr/thd_config_color_gray_4</item>
+        <!-- 光标颜色与textColor一致，若要自定义，应该用ShapeDrawable，不能简单指定一个color -->
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+        <item name="android:popupElevation">2dp</item>
+    </style>
+    <style name="AutoCompleteTextViewBase" parent="android:Widget.Material.Light.AutoCompleteTextView"/>
+    <style name="Button" parent="ButtonBase">
+        <!-- 去掉5.0下Button点击的阴影动画效果 -->
+        <item name="android:stateListAnimator">@null</item>
+        <!-- 取消5.0下Button字符默认大写的功能（会导致 Spannable 失效） -->
+        <!-- http://stackoverflow.com/questions/29007746/button-settext-with-spannable-dosent-work-for-android-5-0-lollipop -->
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="Button.Compat" parent="ButtonBase.Compat">
+        <!-- 去掉5.0下Button点击的阴影动画效果 -->
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="ButtonBase" parent="android:Widget.Material.Light.Button"/>
+    <style name="DropDownListViewBase" parent="android:Widget.Material.Light.ListView.DropDown"/>
+    <style name="EditTextBase" parent="android:Widget.Material.Light.EditText"/>
+    <style name="GridViewBase" parent="android:Widget.Material.Light.GridView"/>
+    <style name="ImageButtonBase" parent="android:Widget.Material.Light.ImageButton"/>
+    <style name="ListViewBase" parent="android:Widget.Material.Light.ListView"/>
+    <style name="TextAppearanceBase" parent="android:TextAppearance.Material"/>
+</resources>

@@ -1,0 +1,94 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+//        versionCode rootProject.ext.android["versionCode"]
+//        versionName rootProject.ext.android["versionName"]
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+        ndk {
+            //根据需要 自行选择添加的对应cpu类型的.so库。
+            abiFilters 'armeabi-v7a','x86','arm64-v8a','x86_64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64' , 'arm64-v8a', 'armeabi-v7a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    externalNativeBuild {
+
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation rootProject.ext.dependencies["okhttp3"]
+    api rootProject.ext.dependencies["cardview-v7"]
+    api rootProject.ext.dependencies["recyclerview-v7"]
+    api rootProject.ext.dependencies["design"]
+    api rootProject.ext.dependencies["vlayout"]
+    api rootProject.ext.dependencies["commonAdapter"]
+    api rootProject.ext.dependencies["baseRecyclerViewAdapter"]
+    api rootProject.ext.dependencies["recyclerview-swipe"]
+    api rootProject.ext.dependencies["barlibrary"]
+    api rootProject.ext.dependencies["zxing-core"]
+    api(rootProject.ext.dependencies["rxbinding2"]) {
+        exclude group: 'io.reactivex.rxjava2'
+    } 
+    implementation rootProject.ext.dependencies["gson"]
+    api 'com.github.BaronZ88:Retrofit2-FastJson-Converter:1.2'
+    api 'com.blankj:utilcode:1.25.9'
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:1.3.4'
+    api 'com.orhanobut:logger:2.1.1'
+    api 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+    //    api(rootProject.ext.dependencies["bottom-navigation-bar"]) {
+    //        exclude module: 'design'
+    //        exclude module: 'appcompat-v7'
+    //    }
+    //    implementation(rootProject.ext.dependencies["autolayout"]) {
+    //        exclude group: 'com.android.support'
+    //    }
+    api rootProject.ext.dependencies["autosize"]
+    api 'com.yanzhenjie:permission:2.0.0-rc4'
+    api 'com.jzxiang.pickerview:TimePickerDialog:1.0.1'
+    api 'me.yokeyword:fragmentation-core:1.3.6'
+    api 'com.haozhang.libary:android-slanted-textview:1.2'
+    api rootProject.ext.dependencies["multidex"]
+    api rootProject.ext.dependencies["progressmanager"]
+    api rootProject.ext.dependencies["retrofit-url-manager"]
+    api 'me.jessyan:arms:2.4.1'
+    api 'com.github.devsideal:VectorChildFinder:1.0.0'
+    api 'com.alibaba:arouter-api:1.4.0'
+    api 'com.google.android:flexbox:1.0.0'
+    api 'com.jaeger.ninegridimageview:library:1.1.1'
+    api 'com.dyhdyh.smartpay:smartpay:1.0.1'
+    //    api 'com.zzhoujay.richtext:richtext:3.0.8'
+    implementation files('libs/alipaySdk-20180316.jar')
+}

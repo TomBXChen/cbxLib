@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_gray_light">#8a8a8a</color>
+    <color name="base_gray_line">#e8e8e8</color>
+    <color name="base_gray">#5b5b5b</color>
+    <color name="base_gray_transparent">#aa5b5b5b</color>
+
+    <color name="font_gray">#666666</color>
+    <color name="font_gray_dark">#333333</color>
+    <color name="font_gray_light">#999999</color>
+
+    <color name="red_hint">#f96463</color>
+    <color name="red_hint_dark">#fe7763</color>
+
+    <color name="green">#3dcf94</color>
+    <color name="green_light">#40cfaa</color>
+
+    <color name="blue">#2086DF</color>
+
+
+    <color name="colorGray">#bbbbbb</color>
+    <color name="colorLightGray">#eee</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPurple">#6F0AEE</color>
+    <color name="colorDarkBlue">#0091EA</color>
+    <color name="colorLightBlue">#81D4FA</color>
+
+    <color name="grayf9">#f9f9f9</color>
+    <color name="gray_gb">#dddddd</color>
+    <color name="grayc4">#c4c4c4</color>
+    <color name="graye3">#e3e7ee</color>
+    <color name="alipay">#00a5ff</color>
+    <color name="gray_e5">#e5e5e5</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

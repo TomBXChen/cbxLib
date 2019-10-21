@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="THDLoadingStyle" format="reference" />
+    <attr name="THDTopBarStyle" format="reference" />
+    <attr name="THDButtonStyle" format="reference" />
+    <attr name="THDTabSegmentStyle" format="reference" />
+    <attr name="THDRadiusImageViewStyle" format="reference" />
+    <attr name="THDTipPointStyle" format="reference" />
+    <attr name="THDTipNewStyle" format="reference" />
+    <attr name="thd_dialog_min_width" format="dimension" />
+    <attr name="thd_dialog_margin_horizontal" format="dimension" />
+    <attr name="thd_dialog_margin_vertical" format="dimension" />
+    <attr name="thd_dialog_bg" format="reference" />
+    <attr name="thd_dialog_title_text_color" format="color" />
+    <attr name="thd_dialog_title_text_size" format="dimension" />
+    <attr name="thd_dialog_padding_horizontal" format="dimension" />
+    <attr name="thd_dialog_title_margin_top" format="dimension" />
+    <attr name="thd_dialog_action_container_margin_bottom" format="dimension" />
+    <attr name="thd_dialog_action_container_margin_horizontal" format="dimension" />
+    <attr name="thd_dialog_action_text_negative_color" format="reference" />
+    <attr name="thd_dialog_action_text_color" format="reference" />
+    <attr name="thd_dialog_action_button_height" format="dimension" />
+    <attr name="thd_dialog_action_button_margin_left" format="dimension" />
+    <attr name="thd_dialog_action_button_min_width" format="dimension" />
+    <attr name="thd_dialog_action_button_padding_horizontal" format="dimension" />
+    <attr name="thd_dialog_action_button_text_size" format="dimension" />
+    <attr name="thd_dialog_action_drawable_padding" format="dimension" />
+    <attr name="thd_dialog_action_btn_bg" format="reference" />
+    <attr name="thd_dialog_action_block_btn_bg" format="reference" />
+    <attr name="thd_dialog_action_block_btn_height" format="dimension" />
+    <attr name="thd_dialog_action_block_container_margin_bottom" format="dimension" />
+    <attr name="qmui_dialog_content_message_text_size" format="dimension" />
+    <attr name="qmui_dialog_content_padding_bottom" format="dimension" />
+    <attr name="qmui_dialog_content_padding_bottom_when_action_block" format="dimension" />
+    <attr name="qmui_dialog_content_padding_bottom_when_no_action" format="dimension" />
+    <attr name="qmui_dialog_content_padding_top" format="dimension" />
+    <attr name="qmui_dialog_content_padding_top_when_list" format="dimension" />
+    <attr name="qmui_dialog_content_padding_top_when_no_title" format="dimension" />
+    <attr name="qmui_dialog_padding_horizontal" format="dimension" />
+    <attr name="qmui_s_checkbox" format="reference" />
+    <attr name="qmui_dialog_confirm_content_padding_bottom" format="dimension" />
+    <attr name="qmui_dialog_confirm_content_padding_top" format="dimension" />
+    <attr name="qmui_dialog_edit_content_padding_bottom" format="dimension" />
+    <attr name="qmui_dialog_edit_content_padding_top" format="dimension" />
+    <attr name="qmui_dialog_content_list_item_text_size" format="dimension" />
+    <attr name="thd_dialog_content_list_item_bg" format="reference" />
+    <attr name="qmui_dialog_menu_item_text_color" format="color" />
+    <attr name="qmui_dialog_menu_item_check_icon_margin_horizontal" format="dimension" />
+    <attr name="qmui_dialog_content_list_item_height" format="dimension" />
+
+    <attr name="thd_s_list_item_bg_with_border_bottom" format="reference" />
+    <attr name="thd_s_list_item_bg_with_border_bottom_inset" format="reference" />
+    <attr name="thd_s_list_item_bg_with_border_bottom_inset_left" format="reference" />
+
+    <attr name="thd_tip_dialog_bg" format="reference" />
+    <attr name="thd_tip_dialog_margin_horizontal" format="dimension" />
+    <attr name="thd_tip_dialog_min_height" format="dimension" />
+    <attr name="thd_tip_dialog_min_width" format="dimension" />
+    <attr name="thd_tip_dialog_padding_horizontal" format="dimension" />
+    <attr name="thd_tip_dialog_padding_vertical" format="dimension" />
+    <attr name="thd_content_spacing_horizontal" format="dimension" />
+    <attr name="thd_content_padding_horizontal" format="dimension" />
+
+    <attr name="thd_topbar_height" format="dimension" />
+    <attr name="thd_topbar_image_btn_height" format="dimension" />
+    <attr name="thd_topbar_image_btn_width" format="dimension" />
+    <attr name="thd_topbar_subtitle_color" format="color" />
+    <attr name="thd_topbar_subtitle_text_size" format="dimension" />
+    <attr name="thd_topbar_text_btn_color_state_list" format="reference" />
+    <attr name="thd_topbar_text_btn_padding_horizontal" format="dimension" />
+    <attr name="thd_topbar_text_btn_text_size" format="dimension" />
+    <attr name="thd_topbar_title_color" format="color" />
+    <attr name="thd_topbar_title_container_padding_horizontal" format="dimension" />
+    <attr name="thd_topbar_title_margin_horizontal_when_no_btn_aside" format="dimension" />
+    <attr name="thd_topbar_title_text_size" format="dimension" />
+    <attr name="thd_topbar_title_text_size_with_subtitle" format="dimension" />
+
+    <attr name="thd_round_btn_bg_color" format="color" />
+    <attr name="thd_round_btn_border_color" format="color" />
+    <attr name="thd_round_btn_border_width" format="dimension" />
+    <attr name="thd_round_btn_text_color" format="color" />
+    <attr name="thd_round_btn_text_size" format="dimension" />
+
+    <attr name="thd_tab_sign_count_view" format="reference" />
+    <attr name="thd_tab_sign_count_view_bg" format="reference" />
+    <attr name="thd_tab_sign_count_view_minSize" format="dimension" />
+    <attr name="thd_tab_sign_count_view_minSize_with_text" format="dimension" />
+    <attr name="thd_tab_sign_count_view_padding_horizontal" format="dimension" />
+
+    <attr name="thd_bottom_sheet_button_height" format="dimension" />
+    <attr name="thd_bottom_sheet_button_text_background" format="reference" />
+    <attr name="thd_bottom_sheet_button_text_color" format="reference" />
+    <attr name="thd_bottom_sheet_button_text_size" format="dimension" />
+    <attr name="thd_bottom_sheet_grid_item_icon_size" format="dimension" />
+    <attr name="thd_bottom_sheet_grid_item_mini_width" format="dimension" />
+    <attr name="thd_bottom_sheet_grid_item_text_appearance" format="reference" />
+    <attr name="thd_bottom_sheet_grid_line_padding_horizontal" format="dimension" />
+    <attr name="thd_bottom_sheet_grid_line_vertical_space" format="dimension" />
+    <attr name="thd_bottom_sheet_grid_padding_vertical" format="dimension" />
+    <attr name="thd_bottom_sheet_list_item_bg" format="reference" />
+    <attr name="thd_bottom_sheet_list_item_height" format="dimension" />
+    <attr name="thd_bottom_sheet_list_item_icon_margin_right" format="dimension" />
+    <attr name="thd_bottom_sheet_list_item_icon_size" format="dimension" />
+    <attr name="thd_bottom_sheet_list_item_mark_margin_left" format="dimension" />
+    <attr name="thd_bottom_sheet_list_item_padding_horizontal" format="dimension" />
+    <attr name="thd_bottom_sheet_list_item_text_appearance" format="reference" />
+    <attr name="thd_bottom_sheet_list_item_tip_point_margin_left" format="dimension" />
+    <attr name="thd_bottom_sheet_title_appearance" format="reference" />
+    <attr name="thd_bottom_sheet_title_bg" format="reference" />
+    <attr name="thd_bottom_sheet_title_height" format="dimension" />
+    <attr name="thd_icon_check_mark" format="reference" />
+    <attr name="thd_list_item_bg_with_border_top" format="reference" />
+    <attr name="thd_list_item_bg_with_border_top_inset_left" format="reference" />
+    <attr name="thd_list_item_bg_with_border_top_inset_left_pressed" format="reference" />
+    <attr name="thd_list_item_bg_with_border_top_pressed" format="reference" />
+    <attr name="thd_list_item_bg_with_border_bottom" format="reference" />
+    <attr name="thd_list_item_bg_with_border_bottom_inset_left" format="reference" />
+    <attr name="thd_list_item_bg_with_border_bottom_inset_left_pressed" format="reference" />
+    <attr name="thd_list_item_bg_with_border_bottom_pressed" format="reference" />
+    <attr name="thd_list_item_bg_with_border_double" format="reference" />
+    <attr name="thd_list_item_bg_with_border_double_pressed" format="reference" />
+
+    <attr name="thd_config_color_gray_1" format="color" />
+    <attr name="thd_config_color_gray_2" format="color" />
+    <attr name="thd_config_color_gray_3" format="color" />
+    <attr name="thd_config_color_gray_4" format="color" />
+    <attr name="thd_config_color_gray_5" format="color" />
+    <attr name="thd_config_color_gray_6" format="color" />
+    <attr name="thd_config_color_gray_7" format="color" />
+    <attr name="thd_config_color_gray_8" format="color" />
+    <attr name="thd_config_color_gray_9" format="color" />
+    <attr name="qmui_config_color_black" format="color" />
+    <attr name="qmui_config_color_blue" format="color" />
+
+    <attr name="thd_config_color_separator" format="color" />
+    <attr name="thd_config_color_separator_darken" format="color" />
+
+    <attr name="thd_config_color_background_pressed" format="color" />
+
+    <attr name="thd_dialog_background_dim_amount" format="float" />
+
+    <!--**********************************************
+        *                  qmui popup                  *
+        ***********************************************-->
+    <attr name="thd_popup_bg" format="reference" />
+    <attr name="thd_popup_arrow_down" format="reference" />
+    <attr name="thd_popup_arrow_up" format="reference" />
+    <attr name="thd_popup_arrow_up_margin_top" format="dimension" /> <!-- 一般与qmui_popup_bg上阴影相等 -->
+    <attr name="thd_popup_arrow_down_margin_bottom" format="dimension" /> <!-- 一般与qmui_popup_bg下阴影相等 -->
+
+    <!--**********************************************
+*              qmui common list                  *
+**********************************************-->
+
+    <attr name="thd_common_list_item_icon_margin_right" format="dimension" />
+    <attr name="thd_common_list_item_accessory_margin_left" format="dimension" />
+    <attr name="thd_common_list_item_title_v_text_size" format="dimension" />
+    <attr name="thd_common_list_item_title_h_text_size" format="dimension" />
+    <attr name="thd_common_list_item_h_space_min_width" format="dimension" />
+    <attr name="thd_common_list_item_detail_v_text_size" format="dimension" />
+    <attr name="thd_common_list_item_detail_h_text_size" format="dimension" />
+    <attr name="thd_common_list_item_detail_line_space" format="dimension" />
+
+    <string name="thd_tool_fixellipsize">\u200b</string>
+
+    <color name="thd_config_color_link">#547FB0</color>
+    <color name="thd_config_color_white">#ffffff</color>
+    <color name="thd_config_color_transparent">#00000000</color>
+    <color name="thd_drawable_color_list_pressed">#DEE0E2</color>
+    <color name="thd_config_color_gray_1">#353C46</color>
+    <color name="thd_config_color_gray_2">#49505A</color>
+    <color name="thd_config_color_gray_3">#5D646E</color>
+    <color name="thd_config_color_gray_4">#717882</color>
+    <color name="thd_config_color_gray_5">#858C96</color>
+    <color name="thd_config_color_gray_6">#99A0AA</color>
+    <color name="thd_config_color_gray_7">#ADB4BE</color>
+    <color name="thd_config_color_gray_8">#C4C8D0</color>
+    <color name="thd_config_color_gray_9">#D8DCE4</color>
+    <color name="qmui_config_color_black">#212832</color>
+    <color name="qmui_config_color_blue">#1B88EE</color>
+    <color name="thd_config_color_separator">#DEE0E2</color>
+    <color name="thd_config_color_separator_darken">#D4D6D8</color>
+    <dimen name="thd_btn_text_size">16sp</dimen>
+    <dimen name="thd_btn_border_width">0dp</dimen>
+    <color name="btn_filled_blue_bg_disabled">#80416f96</color>
+    <color name="btn_filled_blue_bg_normal">#416f96</color>
+    <color name="btn_filled_blue_bg_pressed">#243f55</color>
+    <color name="btn_filled_green_bg_disabled">#80416f96</color>
+    <color name="btn_filled_green_bg_normal">#3dd094</color>
+    <color name="btn_filled_green_bg_pressed">#7fd094</color>
+    <color name="btn_ghost_blue_border_disabled">#801B88EE</color>
+    <color name="btn_ghost_blue_border_normal">@color/qmui_config_color_blue</color>
+    <color name="btn_ghost_blue_border_pressed">#801B88EE</color>
+    <color name="btn_ghost_blue_text_disabled">#801B88EE</color>
+    <color name="btn_ghost_blue_text_normal">@color/qmui_config_color_blue</color>
+    <color name="btn_ghost_blue_text_pressed">#801B88EE</color>
+    <color name="thd_config_color_red">#FA3A3A</color>
+    <color name="thd_config_color_background_pressed">#EEEFF1</color>
+    <color name="thd_drawable_color_list_separator">#DEE0E2</color>
+
+
+    <dimen name="thd_tips_point_size">8dp</dimen>
+    <dimen name="thd_list_divider_height">1px</dimen>
+    <dimen name="thd_list_item_inset_left">16dp</dimen>
+    <dimen name="thd_group_list_section_header_footer_text_size">13sp</dimen>
+
+
+    <style name="THD" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!--**********************************************
+        *                qmui common color               *
+        **********************************************-->
+        <item name="thd_config_color_separator">@color/thd_config_color_separator</item>
+        <item name="thd_config_color_separator_darken">@color/thd_config_color_separator_darken
+        </item>
+        <item name="thd_config_color_background_pressed">
+            @color/thd_config_color_background_pressed
+        </item>
+
+        <item name="thd_config_color_gray_1">@color/thd_config_color_gray_1</item>
+        <item name="thd_config_color_gray_2">@color/thd_config_color_gray_2</item>
+        <item name="thd_config_color_gray_3">@color/thd_config_color_gray_3</item>
+        <item name="thd_config_color_gray_4">@color/thd_config_color_gray_4</item>
+        <item name="thd_config_color_gray_5">@color/thd_config_color_gray_5</item>
+        <item name="thd_config_color_gray_6">@color/thd_config_color_gray_6</item>
+        <item name="thd_config_color_gray_7">@color/thd_config_color_gray_7</item>
+        <item name="thd_config_color_gray_8">@color/thd_config_color_gray_8</item>
+        <item name="thd_config_color_gray_9">@color/thd_config_color_gray_9</item>
+
+        <item name="thd_dialog_min_width">280dp</item>
+        <item name="thd_dialog_margin_horizontal">35dp</item>
+        <item name="thd_dialog_bg">@drawable/thd_dialog_bg</item>
+        <item name="thd_dialog_margin_vertical">20dp</item>
+        <item name="thd_dialog_title_text_color">#212832</item>
+        <item name="thd_dialog_title_text_size">17sp</item>
+        <item name="thd_dialog_padding_horizontal">24dp</item>
+        <item name="thd_dialog_title_margin_top">24dp</item>
+        <item name="thd_dialog_action_container_margin_bottom">12dp</item>
+        <item name="thd_dialog_action_container_margin_horizontal">12dp</item>
+        <item name="thd_dialog_action_text_negative_color">
+            @drawable/thd_dialog_action_text_negative_color
+        </item>
+        <item name="thd_dialog_action_text_color">@drawable/thd_dialog_action_text_color</item>
+        <item name="thd_dialog_action_button_height">36dp</item>
+        <item name="thd_dialog_action_button_min_width">64dp</item>
+        <item name="thd_dialog_action_button_margin_left">8dp</item>
+        <item name="thd_dialog_action_button_padding_horizontal">12dp</item>
+        <item name="thd_dialog_action_button_text_size">14sp</item>
+        <item name="thd_dialog_action_drawable_padding">6dp</item>
+        <item name="thd_dialog_action_btn_bg">@drawable/thd_dialog_action_btn_bg</item>
+        <item name="thd_dialog_action_block_btn_bg">@drawable/thd_s_list_item_bg_with_border_none
+        </item>
+        <item name="thd_dialog_action_block_btn_height">36dp</item>
+        <item name="thd_dialog_action_block_container_margin_bottom">12dp</item>
+        <item name="qmui_dialog_content_message_text_size">16sp</item>
+        <item name="qmui_dialog_content_list_item_height">48dp</item>
+        <item name="qmui_dialog_content_list_item_text_size">15sp</item>
+        <item name="qmui_dialog_padding_horizontal">24dp</item>
+        <item name="qmui_s_checkbox">@drawable/thd_s_checkbox</item>
+        <item name="qmui_dialog_confirm_content_padding_top">28dp</item>
+        <item name="qmui_dialog_confirm_content_padding_bottom">22dp</item>
+        <item name="qmui_dialog_edit_content_padding_top">28dp</item>
+        <item name="qmui_dialog_edit_content_padding_bottom">31dp</item>
+        <item name="thd_dialog_content_list_item_bg">@drawable/thd_s_list_item_bg_with_border_none
+        </item>
+        <item name="qmui_dialog_menu_item_text_color">?attr/qmui_config_color_black</item>
+        <item name="qmui_dialog_menu_item_check_icon_margin_horizontal">6dp</item>
+
+        <item name="thd_tip_dialog_min_width">120dp</item>
+        <item name="thd_tip_dialog_min_height">56dp</item>
+        <item name="thd_tip_dialog_margin_horizontal">?attr/thd_content_spacing_horizontal</item>
+        <item name="thd_tip_dialog_padding_vertical">12dp</item>
+        <item name="thd_tip_dialog_padding_horizontal">?attr/thd_content_padding_horizontal</item>
+        <item name="thd_content_padding_horizontal">16dp</item>
+        <item name="thd_content_spacing_horizontal">16dp</item>
+        <item name="thd_tip_dialog_bg">@drawable/thd_tip_dialog_bg</item>
+
+        <item name="THDLoadingStyle">@style/THDLoadingStyle</item>
+
+        <item name="thd_list_item_bg_with_border_bottom">
+            @drawable/thd_list_item_bg_with_border_bottom
+        </item>
+        <item name="thd_list_item_bg_with_border_bottom_pressed">
+            @drawable/thd_list_item_bg_with_border_bottom_pressed
+        </item>
+        <item name="thd_list_item_bg_with_border_bottom_inset_left">
+            @drawable/thd_list_item_bg_with_border_bottom_inset_left
+        </item>
+        <item name="thd_list_item_bg_with_border_bottom_inset_left_pressed">
+            @drawable/thd_list_item_bg_with_border_bottom_inset_left_pressed
+        </item>
+        <item name="thd_list_item_bg_with_border_top">@drawable/thd_list_item_bg_with_border_top
+        </item>
+        <item name="thd_list_item_bg_with_border_top_pressed">
+            @drawable/thd_list_item_bg_with_border_top_pressed
+        </item>
+        <item name="thd_list_item_bg_with_border_top_inset_left">
+            @drawable/thd_list_item_bg_with_border_top_inset_left
+        </item>
+        <item name="thd_list_item_bg_with_border_top_inset_left_pressed">
+            @drawable/thd_list_item_bg_with_border_top_inset_left_pressed
+        </item>
+
+        <!--**********************************************
+         *                  thd topbar                   *
+         ***********************************************-->
+        <item name="thd_topbar_height">56dp</item>
+        <!--<item name="thd_topbar_height">105mm</item>-->
+        <item name="thd_topbar_title_color">@color/thd_config_color_gray_1</item>
+        <item name="thd_topbar_title_text_size">17sp</item>
+        <item name="thd_topbar_title_text_size_with_subtitle">16sp</item>
+        <item name="thd_topbar_title_margin_horizontal_when_no_btn_aside">0dp</item>
+        <item name="thd_topbar_title_container_padding_horizontal">8dp</item>
+        <item name="thd_topbar_subtitle_text_size">11sp</item>
+        <item name="thd_topbar_subtitle_color">@color/thd_config_color_gray_1</item>
+        <item name="thd_topbar_image_btn_width">48dp</item>
+        <item name="thd_topbar_image_btn_height">48dp</item>
+        <item name="thd_topbar_text_btn_padding_horizontal">12dp</item>
+        <item name="thd_topbar_text_btn_color_state_list">@color/thd_topbar_text_color</item>
+        <item name="thd_topbar_text_btn_text_size">16sp</item>
+
+        <!--**********************************************
+        *                   thd btn                     *
+        ***********************************************-->
+        <item name="thd_round_btn_text_size">@dimen/thd_btn_text_size</item>
+        <item name="thd_round_btn_border_width">@dimen/thd_btn_border_width</item>
+        <item name="thd_round_btn_bg_color">@color/thd_btn_green_bg</item>
+        <item name="thd_round_btn_border_color">@color/thd_btn_blue_border</item>
+        <item name="thd_round_btn_text_color">@color/thd_btn_blue_text</item>
+        <!--**********************************************
+           *                   popup                    *
+           ***********************************************-->
+        <item name="thd_popup_bg">@drawable/thd_popup_bg</item>
+        <item name="thd_popup_arrow_down">@drawable/thd_popup_arrow_down</item>
+        <item name="thd_popup_arrow_up">@drawable/thd_popup_arrow_up</item>
+        <item name="thd_popup_arrow_up_margin_top">13dp</item>
+        <item name="thd_popup_arrow_down_margin_bottom">13dp</item>
+
+        <!--**********************************************
+        *                  thd tabSegment               *
+        ***********************************************-->
+        <item name="thd_tab_sign_count_view">@style/thd_tab_sign_count_view</item>
+        <item name="thd_tab_sign_count_view_minSize">@dimen/thd_tab_sign_count_view_minSize</item>
+        <item name="thd_tab_sign_count_view_minSize_with_text">
+            @dimen/thd_tab_sign_count_view_minSize_with_text
+        </item>
+        <item name="thd_tab_sign_count_view_bg">@drawable/thd_sign_count_view_bg</item>
+        <item name="thd_tab_sign_count_view_padding_horizontal">4dp</item>
+
+        <item name="thd_dialog_background_dim_amount">0.6</item>
+
+        <!--**********************************************
+        *                 thd bottom sheet              *
+       ***********************************************-->
+        <item name="thd_bottom_sheet_title_height">56dp</item>
+        <item name="thd_bottom_sheet_title_appearance">@style/THDTextAppearance.Title.Gray</item>
+        <item name="thd_bottom_sheet_title_bg">?attr/thd_list_item_bg_with_border_bottom</item>
+
+        <item name="thd_bottom_sheet_list_item_padding_horizontal">
+            ?attr/thd_content_padding_horizontal
+        </item>
+        <item name="thd_bottom_sheet_list_item_height">56dp</item>
+        <item name="thd_bottom_sheet_list_item_mark_margin_left">12dp</item>
+        <item name="thd_bottom_sheet_list_item_tip_point_margin_left">4dp</item>
+        <item name="thd_bottom_sheet_list_item_text_appearance">@style/THDTextAppearance.ListItem
+        </item>
+        <item name="thd_bottom_sheet_list_item_bg">?attr/thd_s_list_item_bg_with_border_bottom
+        </item>
+        <item name="thd_bottom_sheet_list_item_icon_size">22dp</item>
+        <item name="thd_bottom_sheet_list_item_icon_margin_right">12dp</item>
+
+        <item name="thd_bottom_sheet_grid_padding_vertical">12dp</item>
+        <item name="thd_bottom_sheet_grid_line_padding_horizontal">12dp</item>
+        <item name="thd_bottom_sheet_grid_line_vertical_space">0dp</item>
+        <item name="thd_bottom_sheet_grid_item_mini_width">84dp</item>
+        <item name="thd_bottom_sheet_grid_item_icon_size">56dp</item>
+        <item name="thd_bottom_sheet_grid_item_text_appearance">
+            @style/THDTextAppearance.GridItem.Small
+        </item>
+
+        <item name="thd_bottom_sheet_button_height">56dp</item>
+        <item name="thd_bottom_sheet_button_text_size">15sp</item>
+        <item name="thd_bottom_sheet_button_text_color">@color/thd_config_color_gray_2</item>
+        <item name="thd_bottom_sheet_button_text_background">
+            @drawable/thd_s_list_item_bg_with_border_top
+        </item>
+
+        <item name="thd_s_list_item_bg_with_border_bottom">
+            @drawable/thd_s_list_item_bg_with_border_bottom
+        </item>
+        <item name="thd_s_list_item_bg_with_border_bottom_inset">
+            @drawable/thd_s_list_item_bg_with_border_bottom_inset
+        </item>
+        <item name="thd_s_list_item_bg_with_border_bottom_inset_left">
+            @drawable/thd_s_list_item_bg_with_border_bottom_inset_left
+        </item>
+
+
+        <!--**********************************************
+     *              qmui common list                  *
+     **********************************************-->
+
+        <item name="thd_common_list_item_icon_margin_right">12dp</item>
+        <item name="thd_common_list_item_accessory_margin_left">14dp</item>
+        <item name="thd_common_list_item_title_v_text_size">15sp</item>
+        <item name="thd_common_list_item_title_h_text_size">16sp</item>
+        <item name="thd_common_list_item_h_space_min_width">14dp</item>
+        <item name="thd_common_list_item_detail_v_text_size">13sp</item>
+        <item name="thd_common_list_item_detail_h_text_size">14sp</item>
+        <item name="thd_common_list_item_detail_line_space">5dp</item>
+
+
+        <!--**********************************************
+        *                   GroupList                    *
+        **********************************************-->
+        <item name="thd_list_item_height">56dp</item>
+        <item name="thd_list_item_height_higher">103dp</item>
+        <item name="thd_group_list_section_header_footer_padding_vertical">8dp</item>
+        <item name="thd_group_list_section_header_footer_textSize">13sp</item>
+
+        <item name="thd_common_list_item_chevron">@drawable/thd_icon_chevron</item>
+        <item name="thd_common_list_item_switch">@drawable/thd_s_icon_switch</item>
+
+        <item name="THDTopBarStyle">@style/THD.TopBar</item>
+        <item name="THDButtonStyle">@style/THD.RoundButton</item>
+        <item name="THDTabSegmentStyle">@style/THD.TabSegment</item>
+        <item name="THDRadiusImageViewStyle">@style/THD.RadiusImageView</item>
+        <item name="THDTipPointStyle">@style/THD.TipPoint</item>
+        <item name="THDTipNewStyle">@style/THD.TipNew</item>
+
+        <item name="THDCommonListItemViewStyle">@style/THD.CommonListItemView</item>
+        <item name="THDGroupListSectionViewStyle">@style/THD.GroupListSectionView</item>
+    </style>
+
+    <item name="qmui_dialog_edit_input" type="id" />
+    <item name="qmui_dialog_edit_right_icon" type="id" />
+
+    <integer name="card_flip_time_full">300</integer>
+    <integer name="card_flip_time_half">100</integer>
+</resources>

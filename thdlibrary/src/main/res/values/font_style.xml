@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="font_gray_TextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_light_title_1" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_light_title_2" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_light_title_3" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_light_title_4" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_dark_title_1" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/font_gray_dark</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_dark_title_2" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/font_gray_dark</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_dark_title_3" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/font_gray_dark</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_dark_title_4" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/font_gray_dark</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_18" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_17" parent="@android:style/TextAppearance">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_16" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_15" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="font_gray_14" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_13" parent="@android:style/TextAppearance">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_12" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_11" parent="@android:style/TextAppearance">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_10" parent="@android:style/TextAppearance">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_white_18" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/thd_config_color_white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_white_17" parent="@android:style/TextAppearance">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/thd_config_color_white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_white_16" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/thd_config_color_white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_white_15" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/thd_config_color_white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_white_14" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/thd_config_color_white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_white_13" parent="@android:style/TextAppearance">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/thd_config_color_white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_white_12" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/thd_config_color_white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_white_11" parent="@android:style/TextAppearance">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/thd_config_color_white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_white_10" parent="@android:style/TextAppearance">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/thd_config_color_white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="font_gray_light_TextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_light_17" parent="@android:style/TextAppearance">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_light_18" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_light_16" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="font_gray_light_15" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="font_gray_light_14" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="font_gray_light_13" parent="@android:style/TextAppearance">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="font_gray_light_12" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_gray_light_10" parent="@android:style/TextAppearance">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="font_gray_light_9" parent="@android:style/TextAppearance">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/font_gray_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_red_18" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/red_hint</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_red_17" parent="@android:style/TextAppearance">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/red_hint</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_red_16" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/red_hint</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_red_15" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/red_hint</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="font_red_14" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/red_hint</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>

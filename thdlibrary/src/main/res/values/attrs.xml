@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    // pull to refresh =================
+    <declare-styleable name="PtrFrameLayout">
+        <!-- Optional. If you put header and content in xml, you can you these to specify them. -->
+        <attr name="ptr_header" format="reference" />
+        <attr name="ptr_content" format="reference" />
+
+        <!-- the resistance when you are moving the frame -->
+        <attr name="ptr_resistance" format="float" />
+
+        <!-- the ration of the height of the header to trigger refresh -->
+        <attr name="ptr_ratio_of_header_height_to_refresh" format="float" />
+
+        <attr name="ptr_duration_to_close" format="integer" />
+        <attr name="ptr_duration_to_close_header" format="integer" />
+
+        <!-- pull to refresh, otherwise release to refresh, default is release to refresh -->
+        <attr name="ptr_pull_to_fresh" format="boolean" />
+
+        <!-- keep header when refreshing-->
+        <attr name="ptr_keep_header_when_refresh" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PtrClassicHeader">
+        <attr name="ptr_rotate_ani_time" format="integer" />
+    </declare-styleable>
+    // pull to refresh =================
+
+    <declare-styleable name="UltraViewPager">
+        <attr name="upv_autoscroll" format="integer" />
+        <attr name="upv_infiniteloop" format="boolean" />
+        <attr name="upv_ratio" format="float" />
+        <attr name="upv_scrollmode" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="upv_disablescroll" format="enum">
+            <enum name="none" value="0" />
+            <enum name="backward" value="1" />
+            <enum name="forward" value="2" />
+        </attr>
+        <attr name="upv_multiscreen" format="boolean" />
+        <attr name="upv_automeasure" format="boolean" />
+        <attr name="upv_itemratio" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="LabelView">
+        <attr name="leftText" format="string" />
+        <attr name="rightText" format="string" />
+        <attr name="topText" format="string" />
+        <attr name="bottomText" format="string" />
+        <attr name="leftTextAppearance" format="reference" />
+        <attr name="rightTextAppearance" format="reference" />
+        <attr name="topTextAppearance" format="reference" />
+        <attr name="bottomTextAppearance" format="reference" />
+        <attr name="drawUnderline" format="boolean" />
+        <attr name="drawDeleteline" format="boolean" />
+        <attr name="android:gravity" />
+
+    </declare-styleable>
+
+    <!-- 输入框 -->
+    <declare-styleable name="EditText_other">
+        <attr name="hintsize" format="integer" />
+        <attr name="hintcontent" format="reference|string" />
+        <attr name="hintcolor" format="reference|color" />
+        <attr name="slideable" format="boolean" />
+        <attr name="hintgravity" format="reference|integer">
+            <enum name="center" value="0x00000011" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="THDTopBar">
+        <attr name="thd_topbar_title_gravity" format="enum">
+            <enum name="left_center" value="19" />
+            <enum name="center" value="17" />
+        </attr>
+        <attr name="thd_topbar_need_separator" format="boolean" />
+        <attr name="thd_topbar_separator_color" format="color" />
+        <attr name="thd_topbar_separator_height" format="dimension" />
+        <attr name="thd_topbar_bg_color" format="color" />
+        <attr name="thd_topbar_left_back_drawable_id" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="THDRoundButton">
+        <attr name="thd_backgroundColor" />
+        <attr name="thd_borderColor" />
+        <attr name="thd_borderWidth" />
+        <attr name="thd_isRadiusAdjustBounds" />
+        <attr name="thd_radius" />
+        <attr name="thd_radiusTopLeft" />
+        <attr name="thd_radiusTopRight" />
+        <attr name="thd_radiusBottomLeft" />
+        <attr name="thd_radiusBottomRight" />
+    </declare-styleable>
+    <declare-styleable name="THDRoundFrameLayout">
+
+        <attr name="thd_backgroundColor" />
+        <attr name="thd_borderColor" />
+        <attr name="thd_borderWidth" />
+        <attr name="thd_isRadiusAdjustBounds" />
+        <attr name="thd_radius" />
+        <attr name="thd_radiusTopLeft" />
+        <attr name="thd_radiusTopRight" />
+        <attr name="thd_radiusBottomLeft" />
+        <attr name="thd_radiusBottomRight" />
+    </declare-styleable>
+    <declare-styleable name="THDRoundLinearLayout">
+        <attr name="thd_backgroundColor" />
+        <attr name="thd_borderColor" />
+        <attr name="thd_borderWidth" />
+        <attr name="thd_isRadiusAdjustBounds" />
+        <attr name="thd_radius" />
+        <attr name="thd_radiusTopLeft" />
+        <attr name="thd_radiusTopRight" />
+        <attr name="thd_radiusBottomLeft" />
+        <attr name="thd_radiusBottomRight" />
+    </declare-styleable>
+    <declare-styleable name="THDRoundRelativeLayout">
+        <attr name="thd_backgroundColor" />
+        <attr name="thd_borderColor" />
+        <attr name="thd_borderWidth" />
+        <attr name="thd_isRadiusAdjustBounds" />
+        <attr name="thd_radius" />
+        <attr name="thd_radiusTopLeft" />
+        <attr name="thd_radiusTopRight" />
+        <attr name="thd_radiusBottomLeft" />
+        <attr name="thd_radiusBottomRight" />
+    </declare-styleable>
+
+    <declare-styleable name="THDTabSegment">
+        <attr name="thd_tab_indicator_height" format="dimension" />
+        <attr name="thd_tab_has_indicator" format="boolean" />
+        <attr name="android:textSize" />
+        <attr name="thd_tab_indicator_top" format="boolean" />
+        <attr name="thd_tab_mode" format="enum">
+            <enum name="scrollable" value="0" />
+            <enum name="fixed" value="1" />
+        </attr>
+        <attr name="thd_tab_space" format="dimension" />
+        <attr name="thd_tab_icon_position" format="enum">
+            <enum name="left" value="0" />
+            <enum name="top" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="thd_tab_typeface_provider" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MenuItem">
+        <attr name="menu_title" format="string" />
+        <attr name="icon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="THDRadiusImageView">
+        <attr name="thd_border_width" />
+        <attr name="thd_border_color" />
+        <attr name="thd_selected_mask_color" format="color" />
+        <attr name="thd_selected_border_color" format="color" />
+        <attr name="thd_selected_border_width" format="dimension" />
+        <attr name="thd_corner_radius" format="dimension" />
+        <attr name="thd_is_oval" format="boolean" />
+        <attr name="thd_is_circle" format="boolean" />
+        <attr name="thd_is_touch_select_mode_enabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BezierBannerView">
+        <attr name="selectedColor" format="color" />
+        <attr name="unSelectedColor" format="color" />
+        <attr name="selectedRaduis" format="dimension" />
+        <attr name="unSelectedRaduis" format="dimension" />
+        <attr name="spacing" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CalendarView">
+
+        <attr name="calendar_padding" format="dimension" /><!--日历内部左右padding-->
+
+        <attr name="week_background" format="color" /><!--周背景-->
+        <attr name="week_line_background" format="color" /><!--线条颜色-->
+        <attr name="week_text_color" format="color" /><!--周栏字体颜色-->
+        <attr name="week_text_size" format="dimension" /><!--周栏字体大小-->
+
+        <attr name="month_view" format="string" /><!--完全自定义月视图-->
+
+        <attr name="week_view" format="string" /> <!--完全自定义周视图-->
+        <attr name="week_bar_height" format="dimension" /> <!--星期栏的高度-->
+        <attr name="week_bar_view" format="string" /> <!--如果需要的话使用自定义星期栏-->
+
+        <attr name="scheme_text" format="string" />
+        <attr name="day_text_size" format="dimension" />
+        <attr name="lunar_text_size" format="dimension" />
+        <attr name="calendar_height" format="dimension" />
+        <attr name="scheme_text_color" format="color" />
+        <attr name="scheme_month_text_color" format="color" />
+        <attr name="scheme_lunar_text_color" format="color" />
+        <attr name="scheme_theme_color" format="color" />
+
+        <attr name="selected_theme_color" format="color" />
+        <attr name="selected_text_color" format="color" />
+        <attr name="selected_lunar_text_color" format="color" />
+
+        <attr name="current_day_text_color" format="color" />
+        <attr name="current_day_lunar_text_color" format="color" />
+        <attr name="current_month_text_color" format="color" />
+        <attr name="other_month_text_color" format="color" />
+        <attr name="current_month_lunar_text_color" format="color" />
+        <attr name="other_month_lunar_text_color" format="color" />
+
+
+        <!-- 年视图相关 -->
+        <attr name="year_view_month_text_size" format="dimension" />
+        <attr name="year_view_day_text_size" format="dimension" />
+        <attr name="year_view_month_text_color" format="color" />
+        <attr name="year_view_day_text_color" format="color" />
+        <attr name="year_view_scheme_color" format="color" />
+        <attr name="year_view_background" format="color" />
+
+        <!--日期范围-->
+        <attr name="min_year" format="integer" />
+        <attr name="max_year" format="integer" />
+        <attr name="min_year_month" format="integer" />
+        <attr name="max_year_month" format="integer" />
+
+        <!--月视图是否可滚动-->
+        <attr name="month_view_scrollable" format="boolean" />
+        <!--周视图是否可滚动-->
+        <attr name="week_view_scrollable" format="boolean" />
+        <!--年视图是否可滚动-->
+        <attr name="year_view_scrollable" format="boolean" />
+
+        <!-- 月份显示模式 -->
+        <attr name="month_view_show_mode">
+            <enum name="mode_all" value="0" />
+            <enum name="mode_only_current" value="1" />
+            <enum name="mode_fix" value="2" />
+        </attr>
+
+        <!-- 自定义周起始 -->
+        <attr name="week_start_with">
+            <enum name="sun" value="1" />
+            <enum name="mon" value="2" />
+            <enum name="sat" value="7" />
+        </attr>
+
+        <!-- 自定义选择模式 -->
+        <attr name="select_mode">
+            <enum name="default_mode" value="0" />
+            <enum name="single_mode" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="CalendarLayout">
+        <attr name="default_status">
+            <enum name="expand" value="0" />
+            <enum name="shrink" value="1" />
+        </attr>
+
+
+        <!-- 手势模式 -->
+        <attr name="gesture_mode">
+            <enum name="default_mode" value="0" />
+            <!--<enum name="only_calendar" value="1" />-->
+            <enum name="disabled" value="2" />
+        </attr>
+
+        <attr name="calendar_show_mode">
+            <enum name="both_month_week_view" value="0" />
+            <enum name="only_week_view" value="1" />
+            <enum name="only_month_view" value="2" />
+        </attr>
+
+        <attr name="calendar_content_view_id" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ToggleButton">
+        <attr name="borderWid" format="dimension"></attr>
+        <attr name="offBorderColor" format="reference|color"></attr>
+        <attr name="offColor" format="reference|color"></attr>
+        <attr name="onColor" format="reference|color"></attr>
+        <attr name="spotColor" format="reference|color"></attr>
+        <attr name="animate" format="reference|boolean"></attr>
+        <attr name="isDefaultOn" format="reference|boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="BottomNavigationBar">
+        <attr name="bnbElevation" format="dimension" />
+        <attr name="bnbActiveColor" format="color" />
+        <attr name="bnbInactiveColor" format="color" />
+        <attr name="bnbBackgroundColor" format="color" />
+        <attr name="bnbAnimationDuration" format="integer" />
+        <attr name="bnbMode" format="enum">
+            <enum name="mode_default" value="0" />
+            <enum name="mode_fixed" value="1" />
+            <enum name="mode_shifting" value="2" />
+            <enum name="mode_fixed_no_title" value="3" />
+            <enum name="mode_shifting_no_title" value="4" />
+        </attr>
+        <attr name="bnbBackgroundStyle" format="enum">
+            <enum name="background_style_default" value="0" />
+            <enum name="background_style_static" value="1" />
+            <enum name="background_style_ripple" value="2" />
+        </attr>
+        <attr name="bnbAutoHideEnabled" format="boolean" />
+    </declare-styleable>
+    <!--************** QMUIGroupListView **************-->
+    <declare-styleable name="THDGroupListView">
+        <attr name="separatorStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="none" value="1" />
+        </attr>
+    </declare-styleable>
+    <attr name="THDGroupListViewStyle" format="reference" />
+    <attr name="THDCommonListItemViewStyle" format="reference" />
+
+    <!--**********************************************
+    *             qmui list item bg                  *
+    **********************************************-->
+    <attr name="thd_list_item_height" format="dimension" />
+    <attr name="thd_list_item_height_higher" format="dimension" />
+    <attr name="thd_group_list_section_header_footer_padding_vertical" format="dimension" />
+    <attr name="thd_group_list_section_header_footer_textSize" format="dimension" />
+
+
+    <!--************ 更新小红点与 new 的样式配置 ***********-->
+    <attr name="THDGroupListSectionViewStyle" format="reference"/>
+    <attr name="thd_common_list_item_chevron" format="reference"/>
+    <attr name="thd_common_list_item_switch" format="reference"/>
+    <declare-styleable name="THDCommonListItemView">
+        <attr name="thd_orientation"/>
+        <attr name="thd_accessory_type" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="chevron" value="1"/>
+            <enum name="switcher" value="2"/>
+            <enum name="custom" value="3"/>
+        </attr>
+        <attr name="thd_commonList_titleColor" format="color"/>
+        <attr name="thd_commonList_detailColor" format="color"/>
+    </declare-styleable>
+</resources>

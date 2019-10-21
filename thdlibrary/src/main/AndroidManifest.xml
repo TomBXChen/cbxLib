@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taohdao.library" >
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <provider
+            android:name=".common.checkVersionlib.core.VersionFileProvider"
+            android:authorities="${applicationId}.versionProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- 元数据 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/versionchecklib_file_paths" />
+        </provider>
+
+        <activity android:name=".common.widget.gallery.GPreviewActivity"
+            android:screenOrientation="portrait"
+            /> android:theme="@android:style/Theme.Translucent.NoTitleBar"
+    </application>
+</manifest>

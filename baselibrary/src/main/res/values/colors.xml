@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#8DA0AC </color>
+    <color name="colorAccent">#2086DF</color>
+
+    <color name="red_hint">#f96463</color>
+    <color name="red_normal">#df0000</color>
+    <color name="red_pressed">#FF6666</color>
+    <color name="orange_fd766b">#fd766b</color>
+    <color name="orange">#f56301</color>
+
+    <color name="orange_100">#ff7245</color>
+    <color name="red_100">#ff4d4f</color>
+
+    <color name="blue_500">#13c2c2</color>
+    <color name="yellow">#fdd860</color>
+
+
+    <color name="basic_blue">#0185ff</color>
+    <color name="basic_blue_light">#86c6fe</color>
+
+    <color name="blue">#2086DF</color>
+
+    <color name="green">#3dcf94</color>
+    <color name="green_translucence">#773dcf94</color>
+    <color name="green_light">#40cfaa</color>
+    <color name="gray">#666666</color>
+    <color name="gray_translucence">#22666666</color>
+    <color name="gray_dark">#333333</color>
+    <color name="gray_light">#c1c1c1</color>
+    <color name="gray_light_20">#999999</color>
+
+    <color name="gray_100">#f5f5f5</color>
+    <color name="gray_200">#eeeeee</color>
+    <color name="gray_300">#e0e0e0</color>
+    <color name="gray_400">#bdbdbd</color>
+    <color name="gray_50">#fafafa</color>
+    <color name="gray_500">#9e9e9e</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#212121</color>
+
+
+
+    <color name="white">#ffffff</color>
+    <color name="white_10">#f6f6f6</color>
+    <color name="white_20">#f8f8f8</color>
+
+
+    <color name="si_default_text_color">#FF0000</color>
+    <color name="si_default_text_color_selected">#FF00FF</color>
+    <color name="si_default_indicator_bg">#ee9999</color>
+</resources>

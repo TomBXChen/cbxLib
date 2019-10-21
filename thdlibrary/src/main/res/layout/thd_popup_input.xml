@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.taohdao.library.common.widget.roundwidget.THDRoundRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:thd_borderColor="@color/base_gray_light"
+            app:thd_borderWidth="1dp"
+            app:thd_isRadiusAdjustBounds="false"
+            app:thd_radius="5dp">
+
+            <EditText
+                android:id="@+id/edit_target_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="输入数量"
+                android:maxLines="1"
+                android:padding="20mm"
+                android:paddingLeft="5mm"
+                android:textColorHint="@color/base_gray_light"
+                android:textSize="17sp" />
+        </com.taohdao.library.common.widget.roundwidget.THDRoundRelativeLayout>
+
+        <com.taohdao.library.common.widget.roundwidget.THDRoundButton
+            android:id="@+id/confirm"
+            android:layout_width="140mm"
+            android:layout_height="70mm"
+            android:gravity="center"
+            android:text="确认"
+            android:layout_marginLeft="15mm"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:thd_backgroundColor="@color/blue"
+            app:thd_borderColor="@color/blue"
+            app:thd_isRadiusAdjustBounds="false"
+            app:thd_radius="8dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5mm"
+        android:layout_marginRight="6mm"
+        android:layout_marginTop="20mm"
+        android:background="@color/thd_config_color_white"
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp">
+
+        <com.taohdao.library.common.widget.numberkeyboard.NumberKeyBoardView
+            android:id="@+id/targetKeyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@drawable/bg_keyboardview"
+            android:keyPreviewOffset="0dp"
+            android:keyTextColor="#000"
+            android:padding="0dp"
+            android:shadowColor="#fff"
+            android:shadowRadius="0.0" />
+    </RelativeLayout>
+</LinearLayout>

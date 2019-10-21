@@ -1,0 +1,18 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="THD">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/gray_100</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white_10</item>
+        <item name="android:screenOrientation">portrait</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+
+        <!--<item name="thd_common_list_item_chevron">@mipmap/dl_tjzl_icon_xyg</item>-->
+    </style>
+
+</resources>
